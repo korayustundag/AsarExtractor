@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asar Extractor</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container text-center mt-2">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Asar
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Select Asar File</h5>
+                        <p class="card-text">Please select an Asar archive file...</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="inputAsarFilePath" readonly>
+                            <button class="btn btn-secondary" type="button" id="selectAsarFileButton">Browse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Extract
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Select Extract Folder</h5>
+                        <p class="card-text">Please specify the folder to extract the archive to...</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="extractFolderPath" readonly>
+                            <button class="btn btn-secondary" type="button"
+                                id="selectExtractFolderButton">Browse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button" id="extractButton">Extract</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

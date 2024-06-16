@@ -1,0 +1,51 @@
+{
+  "name": "asarextractor",
+  "version": "1.0.0",
+  "description": "Asar Archive Extractor",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "dist": "electron-builder build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korayustundag/AsarExtractor.git"
+  },
+  "keywords": [
+    "asar",
+    "archive",
+    "extractor"
+  ],
+  "author": "Koray USTUNDAG <mskorayustundag@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korayustundag/AsarExtractor/issues"
+  },
+  "homepage": "https://github.com/korayustundag/AsarExtractor#readme",
+  "dependencies": {
+    "asar": "^3.2.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.korayustundag.asarextractor",
+    "productName": "Asar Extractor",
+    "executableName": "asar_ext",
+    "directories": {
+      "output": "dist_release"
+    },
+    "win": {
+      "publish": null,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  }
+}
