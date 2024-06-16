@@ -1,2 +1,2 @@
-# AsarExtractor
+# Asar(Electron Archive) Extractor
 Asar archive extractor
